@@ -99,7 +99,8 @@ img {
 .layer-2 {
   background: url("../img/parallax_layer2.png") center no-repeat;
   background-size: cover;
-  top: 38%;
+  top: 25%;
+  /* top: 38%; for commercial used */
   max-width: 90%;
 }
 .layer-3 {
@@ -107,6 +108,7 @@ img {
   z-index: 10;
   background: url("../img/parallax_layer1.png") center no-repeat;
   background-size: cover;
-  top: 35%;
+  top: 20%;
+  /* top: 35%; for commercial used */
   max-height: 80%;
 }
