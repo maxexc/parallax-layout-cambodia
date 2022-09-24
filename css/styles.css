@@ -1,4 +1,5 @@
 body {
+  font-family: "Roboto", sans-serif;
   margin: 0;
 }
 
@@ -13,6 +14,34 @@ img {
   justify-content: center;
   align-items: center;
   height: 60vh;
+  text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  /* text-shadow: 0 0 15px #e2f7a8; */
+  font-size: 35px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  /* color: #e2f7a8; */
+  color: #fdff98;
+  /* outline: 2px solid black; */
+  /* box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2); */
+}
+.copy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  /* z-index: 2; */
+  font-size: 12px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  /* font-family: "Raleway"; */
+  font-style: normal;
+  color: rgb(132, 221, 191);
+  text-shadow: 0 0 15px #e2f7a8;
 }
 .scene {
   z-index: -1;
