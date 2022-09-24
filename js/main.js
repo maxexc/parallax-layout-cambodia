@@ -3,7 +3,7 @@ function parallax(event) {
   this.querySelectorAll(".layer").forEach((layer) => {
     let speed = layer.getAttribute("data-speed");
     // console.log(layer.getAttribute("data-speed"));
-    layer.style.transform = `translateX(${(event.clientX * speed) / 1200}px)`;
+    layer.style.transform = `translateX(${(event.clientX * speed) / 2000}px)`;
   });
 }
 document.addEventListener("mousemove", parallax);
