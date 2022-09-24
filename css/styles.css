@@ -10,12 +10,14 @@ img {
   max-width: 100%;
 }
 .head-title {
-  /* width: 100%; */
+  /* z-index: 5; */
   margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 60vh;
+  padding-top: 50px;
+  padding-bottom: 80px;
+  height: 50vh;
   text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   /* text-shadow: 0 0 15px #e2f7a8; */
@@ -30,26 +32,46 @@ img {
   /* color: #fbfd70; */
   /* outline: 2px solid black; */
 }
-.copy {
-  /* position: fixed; отключает скролл */
-  /* width: 100%; отключает скролл */
-  margin: 0 auto;
+.content {
+  position: relative;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  height: 60vh;
-  /* z-index: 2; */
-  font-size: 12px;
+  justify-content: center;
+  gap: 10px;
+  z-index: 2;
+}
+.text {
+  /* z-index: 5; */
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* height: 52vh; */
+  color: #8affb1;
+  font-size: 19px;
+  padding: 0 100px;
+  text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.space {
+  height: 52vh;
+}
+.copy {
+  position: fixed;
+  left: 45%;
+  top: 95%;
+  z-index: 12;
+  font-size: 21px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  /* font-family: "Raleway"; */
   font-style: normal;
   color: rgb(132, 221, 191);
   text-shadow: 0 0 15px #e2f7a8;
 }
 .scene {
   z-index: -1;
-  position: fixed;
+  position: absolute;
   left: 0;
   top: 0;
   bottom: 0;
@@ -57,7 +79,8 @@ img {
   min-height: 100vh;
 }
 .layer {
-  position: absolute;
+  z-index: 2;
+  position: fixed;
   left: -10%;
   top: 0;
   width: 110%;
@@ -76,13 +99,14 @@ img {
 .layer-2 {
   background: url("../img/parallax_layer2.png") center no-repeat;
   background-size: cover;
-  top: 210px;
+  top: 25%;
   max-width: 90%;
 }
 .layer-3 {
+  /* position: fixed; */
+  z-index: 10;
   background: url("../img/parallax_layer1.png") center no-repeat;
   background-size: cover;
-  top: 200px;
+  top: 20%;
   max-height: 80%;
-  /* max-width: 110%; */
 }
