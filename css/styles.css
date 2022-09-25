@@ -58,14 +58,18 @@ img {
   display: flex;
   align-items: center;
   /* height: 52vh; */
-  color: #8affb1;
-  font-weight: 400;
+  /* color: #8affb1; */
+  color: rgb(28, 85, 54);
+  /* font-weight: 400; */
+  font-weight: 500;
   font-size: 19px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   padding: 0 100px;
-  text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  /* text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2); */
+  text-shadow: 0px 1px 3px rgba(77, 77, 77, 0.2),
+    0px 1px 1px rgba(99, 99, 99, 0.14), 0px 2px 1px rgba(92, 92, 92, 0.2);
 }
 .space {
   height: 52vh;
@@ -79,7 +83,7 @@ img {
   line-height: 1.19;
   letter-spacing: 0.03em;
   font-style: normal;
-  color: rgb(132, 221, 191);
+  /* color: rgb(132, 221, 191); */
   text-shadow: 0 0 15px #e2f7a8;
 }
 .scene {
