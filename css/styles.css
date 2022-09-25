@@ -6,6 +6,18 @@ body {
 * {
   box-sizing: border-box;
 }
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
 img {
   max-width: 100%;
 }
@@ -13,7 +25,6 @@ img {
   /* z-index: 5; */
   margin: 0 auto;
   display: flex;
-  justify-content: center;
   align-items: center;
   padding-top: 50px;
   padding-bottom: 80px;
@@ -21,10 +32,10 @@ img {
   text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   /* text-shadow: 0 0 15px #e2f7a8; */
-  font-size: 35px;
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
+  font-size: 35px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   /* color: #e2f7a8; */
@@ -37,7 +48,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
   gap: 10px;
   z-index: 2;
 }
@@ -46,10 +57,12 @@ img {
   margin: 20px auto;
   display: flex;
   align-items: center;
-  justify-content: center;
   /* height: 52vh; */
   color: #8affb1;
+  font-weight: 400;
   font-size: 19px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
   padding: 0 100px;
   text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
