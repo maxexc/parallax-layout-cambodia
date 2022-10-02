@@ -14,7 +14,8 @@ function parallaxTouch(event) {
   this.querySelectorAll(".layer").forEach((layer) => {
     let speed = layer.getAttribute("data-speed");
     layer.style.transform = `translateX(${
-      (event.changedTouches[0].pageX * speed) / 1000
+      (event.changedTouches[0].clientX * speed) / 1000
+      // (event.changedTouches[0].pageX * speed) / 1000
     }px)`;
   });
 }
