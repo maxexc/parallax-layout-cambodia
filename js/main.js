@@ -7,6 +7,9 @@ function parallax(event) {
   });
 }
 
+const result = _.add(2, 3);
+console.log(result); // 5 CHECK lodash.throttle
+
 document.addEventListener("mousemove", parallax);
 document.addEventListener("touchmove", parallaxTouch); // yoo-hoo!!))) It`s works!
 
@@ -19,3 +22,6 @@ function parallaxTouch(event) {
     }px)`;
   });
 }
+
+// document.addEventListener("mousemove", _.throttle(parallax, 5));
+// document.addEventListener("touchmove", _.throttle(parallaxTouch, 5)); // yoo-hoo!!))) It`s works!
